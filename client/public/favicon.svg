@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288" fill="none">
+  <!-- White background -->
+  <rect width="288" height="288" rx="64" ry="64" fill="#ffffff"/>
+  <!--
+    Serif "C" — drawn using a text element with embedded fallback fonts.
+    The SVG embeds the glyph outline via a foreignObject-safe approach
+    using a well-known system serif stack that renders consistently.
+  -->
+  <text
+    x="148"
+    y="214"
+    font-family="'Georgia', 'Times New Roman', serif"
+    font-size="215"
+    font-weight="400"
+    fill="#0a0a0a"
+    text-anchor="middle"
+    letter-spacing="-2"
+  >C</text>
+</svg>

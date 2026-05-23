@@ -2,7 +2,7 @@ import { useState, useRef, useCallback } from 'react';
 import axios from 'axios';
 import { Upload, FileText, Download, RefreshCw, CheckCircle, AlertCircle, ArrowRight } from 'lucide-react';
 
-const API = import.meta.env.VITE_API_URL ?? 'http://localhost:5000/api';
+const API = import.meta.env.VITE_API_URL ?? '/api';
 
 
 type Stage = 'idle' | 'uploaded' | 'converting' | 'done' | 'error';
@@ -85,7 +85,7 @@ export default function ConverterBox() {
       );
       clearInterval(interval);
       setProgress(100);
-      setDownloadUrl(`http://localhost:5000${res.data.downloadUrl}`);
+      setDownloadUrl(res.data.downloadUrl);
       setStage('done');
     } catch (err) {
       clearInterval(interval);
